@@ -13,51 +13,65 @@ body {
 }
 
 .console {
-    background-color: rgb(85, 85, 85);
+    background-color: rgb(27, 27, 27);
     height: 720px;
     width: 1080px;
     border: white 2px solid;
     border-radius: 5px;
-    background-image: url(/assets/images/Evppne8XMAgNEVy.jpg);
+    /* background-image: url(/assets/images/Evppne8XMAgNEVy.jpg); */
     background-size: contain;
 }
 
-.screen{
+.screen {
     height: 80%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.settings{
+.settings {
     display: flex;
     justify-content: flex-end;
 }
-.choice{
+.choice {
     background-color: rgba(255, 255, 255, 0.432);
     margin: 10px auto;
     width: 600px;
-    height: 50px;
+    min-height: 50px;
     text-align: center;
     padding: 5px;
     border-radius: 5px;
 }
 
-.choice:hover{
+.choice:hover {
     background-color: rgba(255, 255, 255, 0.781);
     cursor: pointer;
 }
 
-.choices{
-    height:100% ;
+.choices {
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.dialogue{
-    font-size: 1.8rem;
+.dialogue {
+    font-size: 1.5rem;
     color: white;
     padding: 5px;
-    margin-top: 18px;
     background-color: rgba(3, 56, 202, 0.555);
-    height: 126px;
+    height: 144px;
 }
+
+.fadeOut {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 0.5s, opacity 0.5s linear;
+}
+
+.fadeIn {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 2s linear;
+}
+/*css                                typing*/
